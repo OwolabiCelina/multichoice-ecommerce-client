@@ -23,6 +23,7 @@ const Services = () => {
                         <h3>{item.title}</h3>
                         <p>{item.subtitle}</p>
                     </div>
+                    
                 </motion.div>
             </Col>
               ))  

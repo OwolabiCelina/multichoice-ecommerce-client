@@ -14,7 +14,7 @@
 }
 
 .product__info span {
-    font-size: 0.9rem;
+    font-size: 0.9rbem;
 }
 
 .product__card-bottom .price{
@@ -29,4 +29,20 @@
     background: var(--primary-color);
     color: #fff;
     border-radius: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+    .product__info h3 a{
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product__info h3 a{
+        font-size: 1rem;
+    }
+
+    .product__card-bottom span i{
+        font-size: 1rem;
+    }
 }

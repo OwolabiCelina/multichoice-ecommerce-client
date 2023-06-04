@@ -4,14 +4,10 @@ import ProductCards from './ProductCards'
 const ProductList = ({data}) => {
   return (
     <>
-    {
-        data ?.map(item => (
-            <ProductCards item={item}/>
+    {data?.map((item, index) => (
+            <ProductCards item={item} key={index}/>
      
-        ))
-    }
-        {/* <ProductCards /> */}
-       
+        ))}       
     </>
   )
 }

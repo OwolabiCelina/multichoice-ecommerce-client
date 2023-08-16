@@ -105,23 +105,18 @@ const Header = () => {
               <span className="badge">{totalQuantity}</span>
               </span>
               <div className='profile'>
-                < motion.img whileTap={{scale: 1.2}} src={ 
-                  currentUser ? currentUser.photoURL : userIcon} alt="" 
-                  onClick={toggleProfileActions}
-                  />
+                < motion.img whileTap={{scale: 1.2}} src={ userIcon} alt="" 
                   
-                  <div className="profile__actions" ref={profileActionRef} 
-                  onClick={toggleProfileActions}>
+                  />
+                  <div className="profile__actions">
                     {
-                      currentUser ? ( <span onClick={logout}>Logout</span> 
-                       ): (
-                       <div className='d-flex align-items-center 
-                       justify-content-center flex-column'>
+                      currentUser ? <span>Logout</span> : <div>
                         <Link to='/signup'>Signup</Link>
                         <Link to='/login'>Login</Link>
                       </div>
-                    )}
+                    }
                   </div>
+               
               </div>
                 <div className="mobile_menu">
               <span onClick={menuToggle}>
@@ -129,8 +124,6 @@ const Header = () => {
               </span>
             </div>
             </div>
-           
-        
           </div>
 
 

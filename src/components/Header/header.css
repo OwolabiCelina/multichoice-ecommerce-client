@@ -92,9 +92,9 @@
     display: none;
     cursor: pointer;
 }
-.show__profileActions{
+/* .show__profileActions{
     display: block;
-}
+} */
 .mobile__menu {
     font-size: 1.3rem;
     color: var(--primary-color);
